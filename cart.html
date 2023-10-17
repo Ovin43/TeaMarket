@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>shopping cart</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/carstyle.css">
+
+</head>
+<body>
+<section class="one">
+   <div class="list"><a class="h" href="index.html">Home</a></div>
+   <div class="list"><a class="h" href="product.html">Products</a></div>
+   <div class="list"><a class="h" href="#contact">Contact us</a></div>
+   <div class="list"><a class="h" href="profile.html">Profile</a></div>
+</section>
+<hr>
+<div class="container">
+
+<section class="shopping-cart">
+
+   <h1 class="heading">shopping cart</h1>
+
+   <table>
+
+      <thead>
+         <th>image</th>
+         <th>name</th>
+         <th>price</th>
+         <th>quantity</th>
+         <th>total price</th>
+         <th>action</th>
+      </thead>
+
+      <tbody>
+
+         <tr>
+            <td><img src="" height="100" alt=""></td>
+            <td></td>
+            <td></td>
+            <td>
+               <form action="" method="post">
+                  <input type="hidden" name="update_quantity_id"  value="" >
+                  <input type="number" name="update_quantity" min="1"  value="" >
+                  <input type="submit" value="update" name="update_update_btn">
+               </form>   
+            </td>
+            <td></td>
+            <td><a href="#" onclick="return confirm('remove item from cart?')" class="delete-btn"> <i class="fas fa-trash"></i> remove</a></td>
+         </tr>
+         <tr class="table-bottom">
+            <td><a href="product.html" class="option-btn" style="margin-top: 0;">continue shopping</a></td>
+            <td colspan="3">grand total</td>
+            <td></td>
+            <td><a href="#" onclick="return confirm('are you sure you want to delete all?');" class="delete-btn"> <i class="fas fa-trash"></i> delete all </a></td>
+         </tr>
+
+      </tbody>
+
+   </table>
+
+   <div class="checkout-btn">
+      <a href="check_out.html" class="btn">procced to checkout</a>
+   </div>
+
+</section>
+
+</div>
+<section class="contacts" id="contact">
+   <div class="contaa">
+       <a href="#">Facebook</a>
+       <a href="#">Instagram</a>
+       <a href="#">Twitter</a>
+   </div>
+</section>
+   
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
